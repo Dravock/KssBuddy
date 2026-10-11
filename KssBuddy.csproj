@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms> <!-- nur für NotifyIcon (Tray) -->
+    <RootNamespace>KssBuddy</RootNamespace>
+    <AssemblyName>KssBuddy</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Charakter-Grafik wird in die EXE eingebettet -->
+    <Resource Include="Assets\**\*.png" />
+    <Resource Include="Assets\video\transitions.json" />
+    <Resource Remove="Assets\character.png;Assets\arms.png" />
+    <Resource Remove="Assets\video\wave\f000.png;Assets\video\wave\f001.png;Assets\video\wave\f002.png;Assets\video\wave\f003.png;Assets\video\wave\f004.png;Assets\video\wave\f005.png;Assets\video\wave\f128.png;Assets\video\wave\f129.png;Assets\video\wave\f130.png;Assets\video\wave\f131.png;Assets\video\wave\f132.png;Assets\video\wave\f133.png;Assets\video\wave\f134.png;Assets\video\wave\f135.png;Assets\video\wave\f136.png;Assets\video\wave\f137.png;Assets\video\wave\f138.png;Assets\video\wave\f139.png" />
+  </ItemGroup>
+
+</Project>
